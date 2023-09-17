@@ -734,7 +734,7 @@
     (property "Value" "Conn_01x04_MountingPin" (at 125.73 44.8056 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "rla-0002:MiniDIN_4_Female_Horizontal_P6.7x2.49mm_THT" (at 123.19 44.45 0)
+    (property "Footprint" "rla-0002:MiniDIN_4_Female_Horizontal_P6.7x2.5mm_THT" (at 123.19 44.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 123.19 44.45 0)
