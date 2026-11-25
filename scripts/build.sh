@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Check the design and generate release outputs:
 #   output/<project>-<version>-schematic.pdf
+#   output/<project>-<version>-bom.csv       (imports into DigiKey's BOM Manager)
 #   output/<project>-<version>-oshpark.zip   (Gerbers + Excellon drill for OSH Park)
 #   output/erc.rpt, output/drc.rpt
 #
@@ -41,6 +42,14 @@ echo "== DRC"
 echo "== Schematic PDF"
 "${KICAD_CLI[@]}" sch export pdf \
     -o "$OUT/$PROJECT-$VERSION-schematic.pdf" "$PROJECT.kicad_sch"
+
+# Columns named for DigiKey's BOM Manager import.
+echo "== BOM"
+"${KICAD_CLI[@]}" sch export bom \
+    --fields '${QUANTITY},Manufacturer Part Number,Manufacturer,Reference,Value' \
+    --labels 'Quantity,Manufacturer Part Number,Manufacturer,Reference Designator,Value' \
+    --group-by 'Manufacturer Part Number' --ref-range-delimiter '' --exclude-dnp \
+    -o "$OUT/$PROJECT-$VERSION-bom.csv" "$PROJECT.kicad_sch"
 
 # Layers and settings per https://docs.oshpark.com/design-tools/kicad/generating-kicad-gerbers/
 echo "== Gerbers"

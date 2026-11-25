@@ -122,10 +122,11 @@ plug's drawing. Adjust the parameters at the top of `case.scad` if needed.
 
 ## Building
 
-`scripts/build.sh` runs ERC and DRC, then writes the schematic PDF and the
-OSH Park package to `output/`. GitHub Actions runs it in the `kicad/kicad`
+`scripts/build.sh` runs ERC and DRC, then writes the schematic PDF, a BOM CSV
+that imports into DigiKey's BOM Manager, and the OSH Park package to
+`output/`. GitHub Actions runs it in the `kicad/kicad`
 container on every push and pull request; pushing a `v*` tag also publishes a
-release with the zip, schematic PDF, and case STLs. To run it locally:
+release with the zip, schematic PDF, BOM, and case STLs. To run it locally:
 
 ```sh
 scripts/build.sh
