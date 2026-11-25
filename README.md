@@ -72,4 +72,8 @@ unbalanced input wiring.
 
 ## License
 
-TBD
+Copyright Rick Altherr 2023-2026.
+
+This hardware design is licensed under the CERN Open Hardware Licence
+Version 2 - Strongly Reciprocal (SPDX: `CERN-OHL-S-2.0`). See
+[LICENSE](LICENSE) for the full text.

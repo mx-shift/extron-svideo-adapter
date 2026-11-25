@@ -7,6 +7,13 @@
 		(legacy_teardrops no)
 	)
 	(paper "A4")
+	(title_block
+		(title "RLA-0002")
+		(rev "2")
+		(company "Rick Altherr")
+		(comment 1 "Copyright Rick Altherr 2023-2026")
+		(comment 2 "Licensed under CERN-OHL-S-2.0")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(2 "B.Cu" signal)
@@ -1501,8 +1508,8 @@
 		(layer "Edge.Cuts")
 		(uuid "1aced708-37ec-465a-88f3-4e42caada1f2")
 	)
-	(gr_text "Copyright Rick Altherr 2023"
-		(at 124.46 88.9 -90)
+	(gr_text "Copyright Rick Altherr 2023-2026"
+		(at 124.46 86.36 -90)
 		(layer "F.SilkS")
 		(uuid "bdcca05e-0acd-4d0b-8a6c-dceeac6ab1dc")
 		(effects
@@ -1613,7 +1620,7 @@
 		)
 	)
 	(gr_text "RLA-0002"
-		(at 127 88.9 -90)
+		(at 127 86.36 -90)
 		(layer "F.SilkS")
 		(uuid "84bb9fc6-cf10-4f08-bc8f-1187911ed0cf")
 		(effects
@@ -1625,7 +1632,7 @@
 		)
 	)
 	(gr_text "Rev 2"
-		(at 127 99.06 -90)
+		(at 127 96.52 -90)
 		(layer "F.SilkS")
 		(uuid "2af893a4-a398-40eb-981b-cd117ba01426")
 		(effects

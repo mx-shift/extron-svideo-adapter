@@ -6,7 +6,10 @@
 	(paper "USLetter")
 	(title_block
 		(title "RLA-0002")
+		(rev "2")
 		(company "Rick Altherr")
+		(comment 1 "Copyright Rick Altherr 2023-2026")
+		(comment 2 "Licensed under CERN-OHL-S-2.0")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
