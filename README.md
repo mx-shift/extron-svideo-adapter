@@ -7,7 +7,11 @@ The IN1606's two analog video inputs use 15-pin HD (VGA-style) connectors. They
 accept S-video, but there's no 4-pin Mini-DIN jack to plug a source into. This
 board routes a standard S-video Mini-DIN onto the HD-15 pins the IN1606 expects
 for S-video. It also breaks out stereo audio between RCA jacks and a 3.5 mm
-5-position terminal block.
+5-position pluggable header.
+
+J1 is a female HD-15, like the IN1606's inputs, so connect the two with a
+male-to-male HD-15 (VGA) cable. A cable with all 15 conductors isn't needed;
+pins 2, 3, 7, 8 and 10 must be connected.
 
 ![Board](docs/board.png)
 
@@ -19,12 +23,17 @@ for S-video. It also breaks out stereo audio between RCA jacks and a 3.5 mm
 
 ## Connectors
 
-| Ref | Function             | Part                                   |
-|-----|----------------------|----------------------------------------|
-| J1  | HD-15 to IN1606      | Amphenol L77HDE15SD1CH4F               |
-| J2  | S-video (Mini-DIN 4) | TE Connectivity 5749181-1              |
-| J3  | Audio header         | TE Connectivity 284512-5 (3.5 mm, 5-pos) |
-| J4  | Audio RCA (L/R)      | CUI Devices RCJ-2123                   |
+| Ref | Function             | Part |
+|-----|----------------------|------|
+| J1  | HD-15 to IN1606      | [Amphenol L77HDE15SD1CH4F](https://www.amphenol-cs.com/product/l77hde15sd1ch4f.html) |
+| J2  | S-video (Mini-DIN 4) | [TE Connectivity 5749181-1](https://www.te.com/en/product-5749181-1.html) |
+| J3  | Audio header         | [TE Connectivity 284512-5](https://www.te.com/en/product-284512-5.html) (3.5 mm, 5-pos) |
+| J4  | Audio RCA (L/R)      | [Same Sky (formerly CUI Devices) RCJ-2123](https://www.sameskydevices.com/product/interconnect/audio-connectors/rca-jacks/rcj-21) |
+
+The HD-15 and audio wiring follow the "Analog Video Connection" pinout table
+and "Analog Audio Connection" figure in the IN1606/IN1608 user guide (Extron
+document 68-2290-01), available from the
+[IN1606 product page](https://www.extron.com/product/in1606).
 
 ## Pinout
 
@@ -50,9 +59,10 @@ All other HD-15 pins are unconnected.
 
 Audio ground is kept separate from the video/chassis ground.
 
-J3 is a pluggable header. It mates with a TE 284506-5 (or compatible 3.5 mm
-5-position) screw-terminal plug, which you wire pin-for-pin to the IN1606's
-5-pole audio input plug (L+, L−, ⏚, R+, R−). This matches Extron's
+J3 is a pluggable header. It mates with a
+[TE 284506-5](https://www.te.com/en/product-284506-5.html) (or compatible
+3.5 mm 5-position) screw-terminal plug, which you wire pin-for-pin to the
+IN1606's 5-pole audio input plug (L+, L−, ⏚, R+, R−). This matches Extron's
 unbalanced input wiring.
 
 ## Revision history
