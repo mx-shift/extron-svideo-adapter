@@ -5,7 +5,7 @@
 	(uuid "0bedb8ff-0642-4021-bbf3-c1560a7e0e4d")
 	(paper "USLetter")
 	(title_block
-		(title "RLA-0002")
+		(title "Extron S-Video Adapter")
 		(rev "2")
 		(company "Rick Altherr")
 		(comment 1 "Copyright Rick Altherr 2023-2026")
@@ -2103,7 +2103,7 @@
 				)
 			)
 		)
-		(property "Footprint" "rla-0002:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset8.89mm_Housed_MountingHolesOffset11.43mm"
+		(property "Footprint" "extron-svideo-adapter:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset8.89mm_Housed_MountingHolesOffset11.43mm"
 			(at 72.39 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2205,7 +2205,7 @@
 			(uuid "6d0a636f-d7fe-40ca-9521-7fbbdd2ffc95")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "J1")
 					(unit 1)
@@ -2247,7 +2247,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rla-0002:MiniDIN_4_Female_Horizontal_P6.7x2.5mm_THT"
+		(property "Footprint" "extron-svideo-adapter:MiniDIN_4_Female_Horizontal_P6.7x2.5mm_THT"
 			(at 123.19 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -2318,7 +2318,7 @@
 			(uuid "67829bf7-07b7-466f-adf4-cf937deae461")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "J2")
 					(unit 1)
@@ -2361,7 +2361,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rla-0002:TerminalBlock_TE_284512-5_1x05_P3.5mm_Horizontal"
+		(property "Footprint" "extron-svideo-adapter:TerminalBlock_TE_284512-5_1x05_P3.5mm_Horizontal"
 			(at 50.8 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -2432,7 +2432,7 @@
 			(uuid "8038cdca-563f-43b3-a424-acfa2cbf83e3")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "J3")
 					(unit 1)
@@ -2510,7 +2510,7 @@
 			(uuid "ea499ac7-8d33-4343-b9b5-038374e3eea1")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "#PWR01")
 					(unit 1)
@@ -2552,7 +2552,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "rla-0002:Jack_RCA_1x2_CUI_RCJ-21XX_Horizontal_THT"
+		(property "Footprint" "extron-svideo-adapter:Jack_RCA_1x2_CUI_RCJ-21XX_Horizontal_THT"
 			(at 121.92 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -2620,7 +2620,7 @@
 			(uuid "53ce7b45-0cd8-4c2c-91b3-3fb77f100e1f")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "J4")
 					(unit 1)
@@ -2698,7 +2698,7 @@
 			(uuid "c04df630-b9fb-4b69-bad8-95e6e1eea9aa")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "#PWR02")
 					(unit 1)
@@ -2777,7 +2777,7 @@
 			(uuid "69ad8556-6eb3-4e5f-af5f-cfe9e3f73621")
 		)
 		(instances
-			(project "rla-0002"
+			(project "extron-svideo-adapter"
 				(path "/0bedb8ff-0642-4021-bbf3-c1560a7e0e4d"
 					(reference "#FLG01")
 					(unit 1)

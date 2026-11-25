@@ -1,4 +1,4 @@
-# RLA-0002: S-Video adapter for Extron IN1606
+# Extron S-Video Adapter
 
 A small, passive breakout board for connecting an S-video source and stereo
 analog audio to an Extron IN1606 scaling presentation switcher.
@@ -76,9 +76,9 @@ unbalanced input wiring.
 
 ## Repository layout
 
-- `rla-0002.kicad_pro`, `.kicad_sch`, `.kicad_pcb`: KiCad project
-- `rla-0002.pretty/`: custom footprints for the connectors above. The project
-  library table (`fp-lib-table`) loads them automatically.
+- `extron-svideo-adapter.kicad_pro`, `.kicad_sch`, `.kicad_pcb`: KiCad project
+- `extron-svideo-adapter.pretty/`: custom footprints for the connectors above.
+  The project library table (`fp-lib-table`) loads them automatically.
 
 ## License
 

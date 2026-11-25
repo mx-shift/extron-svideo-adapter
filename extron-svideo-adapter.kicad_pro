@@ -389,12 +389,12 @@
   },
   "libraries": {
     "pinned_footprint_libs": [
-      "rla-0002"
+      "extron-svideo-adapter"
     ],
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "rla-0002.kicad_pro",
+    "filename": "extron-svideo-adapter.kicad_pro",
     "version": 1
   },
   "net_settings": {

@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "RLA-0002")
+		(title "Extron S-Video Adapter")
 		(rev "2")
 		(company "Rick Altherr")
 		(comment 1 "Copyright Rick Altherr 2023-2026")
@@ -99,7 +99,7 @@
 			(outputdirectory "")
 		)
 	)
-	(footprint "rla-0002:Jack_RCA_1x2_CUI_RCJ-21XX_Horizontal_THT"
+	(footprint "extron-svideo-adapter:Jack_RCA_1x2_CUI_RCJ-21XX_Horizontal_THT"
 		(layer "F.Cu")
 		(uuid "2c30c81e-6080-4097-8017-99fa8502ab75")
 		(at 141.82 105.06 -90)
@@ -174,7 +174,7 @@
 			)
 		)
 		(path "/6fb82e11-a562-40d9-aea1-a3a82396cea9")
-		(sheetfile "rla-0002.kicad_sch")
+		(sheetfile "extron-svideo-adapter.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -401,7 +401,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "rla-0002:MiniDIN_4_Female_Horizontal_P6.7x2.5mm_THT"
+	(footprint "extron-svideo-adapter:MiniDIN_4_Female_Horizontal_P6.7x2.5mm_THT"
 		(layer "F.Cu")
 		(uuid "32e66018-08a6-49d2-b3e1-5c1246c3e9fd")
 		(at 138.81 72.55 -90)
@@ -476,7 +476,7 @@
 			)
 		)
 		(path "/3ee7d2aa-b948-4bce-87c0-552667a75262")
-		(sheetfile "rla-0002.kicad_sch")
+		(sheetfile "extron-svideo-adapter.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -700,7 +700,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "rla-0002:TerminalBlock_TE_284512-5_1x05_P3.5mm_Horizontal"
+	(footprint "extron-svideo-adapter:TerminalBlock_TE_284512-5_1x05_P3.5mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "9c910ce5-c554-4d4b-bdc6-4a0335cbe82c")
 		(at 112.14 94.86 -90)
@@ -775,7 +775,7 @@
 			)
 		)
 		(path "/64348ea8-6cb0-4c14-a347-fd283e7d0dc4")
-		(sheetfile "rla-0002.kicad_sch")
+		(sheetfile "extron-svideo-adapter.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -947,7 +947,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(footprint "rla-0002:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset8.89mm_Housed_MountingHolesOffset11.43mm"
+	(footprint "extron-svideo-adapter:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset8.89mm_Housed_MountingHolesOffset11.43mm"
 		(layer "F.Cu")
 		(uuid "bcd3410a-adc0-430f-b72c-02871fe27c43")
 		(at 118.11 73.075 -90)
@@ -1023,7 +1023,7 @@
 			)
 		)
 		(path "/2cf879a7-bcc7-444c-b975-860696fec4fe")
-		(sheetfile "rla-0002.kicad_sch")
+		(sheetfile "extron-svideo-adapter.kicad_sch")
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
