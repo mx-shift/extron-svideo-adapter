@@ -11,7 +11,7 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.1)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -55,7 +55,7 @@
 		(start -3.25 -1.57)
 		(end -3.25 -0.93)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -65,7 +65,7 @@
 		(start -2.9 -1.2)
 		(end 16.9 -1.2)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -75,7 +75,7 @@
 		(start -2.9 8)
 		(end -2.9 -1.2)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -85,7 +85,7 @@
 		(start -2.61 -1.57)
 		(end -3.25 -1.57)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -95,7 +95,7 @@
 		(start 16.9 -1.2)
 		(end 16.9 8)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -105,7 +105,7 @@
 		(start 16.9 8)
 		(end -2.9 8)
 		(stroke
-			(width 0.12)
+			(width 0.15)
 			(type default)
 		)
 		(layer "F.SilkS")
@@ -166,7 +166,7 @@
 	(pad "1" thru_hole rect
 		(at 0 0)
 		(size 2 2)
-		(drill 1.2)
+		(drill 1.25)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "f403145b-da04-4b61-ad61-0d8e4c32493f")
@@ -174,7 +174,7 @@
 	(pad "2" thru_hole circle
 		(at 3.5 0)
 		(size 2 2)
-		(drill 1.2)
+		(drill 1.25)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "0cec3f63-97aa-4829-8ed4-59ec9a3bc687")
@@ -182,7 +182,7 @@
 	(pad "3" thru_hole circle
 		(at 7 0)
 		(size 2 2)
-		(drill 1.2)
+		(drill 1.25)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "34800730-1864-403f-8f5f-05e96d5bcb71")
@@ -190,7 +190,7 @@
 	(pad "4" thru_hole circle
 		(at 10.5 0)
 		(size 2 2)
-		(drill 1.2)
+		(drill 1.25)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "012f55c0-84a4-4196-b109-eb65742b5baf")
@@ -198,7 +198,7 @@
 	(pad "5" thru_hole circle
 		(at 14 0)
 		(size 2 2)
-		(drill 1.2)
+		(drill 1.25)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "d6ca3974-0eab-49ad-b065-55a902526def")
