@@ -13,6 +13,7 @@
 		(company "Rick Altherr")
 		(comment 1 "Copyright Rick Altherr 2023-2026")
 		(comment 2 "Licensed under CERN-OHL-S-2.0")
+		(comment 3 "Source: ${SOURCE_URL}")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -99,6 +100,7 @@
 			(outputdirectory "")
 		)
 	)
+	(property "SOURCE_URL" "github.com/mx-shift/extron-svideo-adapter")
 	(footprint "extron-svideo-adapter:Jack_RCA_1x2_CUI_RCJ-21XX_Horizontal_THT"
 		(layer "F.Cu")
 		(uuid "2c30c81e-6080-4097-8017-99fa8502ab75")
@@ -228,7 +230,7 @@
 			(uuid "88c5d220-cb4b-4a1a-929e-1b40a01a67d0")
 		)
 		(fp_line
-			(start -20.7 -5.5)
+			(start -20.7 -5.25)
 			(end -20.7 -2.75)
 			(stroke
 				(width 0.15)
@@ -238,7 +240,7 @@
 			(uuid "b909c564-0a9c-40ce-88fc-40a96a9706e5")
 		)
 		(fp_line
-			(start 6.7 -5.5)
+			(start 6.7 -5.25)
 			(end 6.7 -2.75)
 			(stroke
 				(width 0.15)
@@ -511,7 +513,7 @@
 		)
 		(fp_line
 			(start -10.35 -4.51)
-			(end -10.35 -8.51)
+			(end -10.35 -8.26)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -521,7 +523,7 @@
 		)
 		(fp_line
 			(start 3.65 -4.51)
-			(end 3.65 -8.51)
+			(end 3.65 -8.26)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -705,7 +707,7 @@
 		(uuid "9c910ce5-c554-4d4b-bdc6-4a0335cbe82c")
 		(at 112.14 94.86 -90)
 		(property "Reference" "J3"
-			(at 7.62 -2.54 270)
+			(at -3.26 -2.46 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "0094be42-22e4-4f82-adbc-a3d28079669e")
@@ -779,7 +781,7 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -2.9 8)
+			(start -2.9 7.75)
 			(end -2.9 -1.2)
 			(stroke
 				(width 0.15)
@@ -787,16 +789,6 @@
 			)
 			(layer "F.SilkS")
 			(uuid "bd3ed1ec-45a6-46c4-9262-76d2edef4d23")
-		)
-		(fp_line
-			(start 16.9 8)
-			(end -2.9 8)
-			(stroke
-				(width 0.15)
-				(type default)
-			)
-			(layer "F.SilkS")
-			(uuid "9c29d145-b78f-47c0-af57-cae9b8cad51f")
 		)
 		(fp_line
 			(start -2.9 -1.2)
@@ -810,7 +802,7 @@
 		)
 		(fp_line
 			(start 16.9 -1.2)
-			(end 16.9 8)
+			(end 16.9 7.75)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -953,7 +945,7 @@
 		(at 118.11 73.075 -90)
 		(descr "15-pin D-Sub connector, horizontal/angled (90 deg), THT-mount, female, pitch 2.29x2.54mm, pin-PCB-offset 8.89mm, distance of mounting holes 25mm, distance of mounting holes to PCB edge 11.43")
 		(property "Reference" "J1"
-			(at -4 -3 270)
+			(at -12.575 -3 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "c038e61b-5229-470b-928b-267112e384e0")
@@ -1027,7 +1019,7 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -19.735 13.97)
+			(start -19.735 13.72)
 			(end -19.735 -2.13)
 			(stroke
 				(width 0.15)
@@ -1048,7 +1040,7 @@
 		)
 		(fp_line
 			(start 11.075 -2.13)
-			(end 11.075 13.97)
+			(end 11.075 13.72)
 			(stroke
 				(width 0.15)
 				(type default)
@@ -1508,18 +1500,6 @@
 		(layer "Edge.Cuts")
 		(uuid "1aced708-37ec-465a-88f3-4e42caada1f2")
 	)
-	(gr_text "Copyright Rick Altherr 2023-2026"
-		(at 124.46 86.36 -90)
-		(layer "F.SilkS")
-		(uuid "bdcca05e-0acd-4d0b-8a6c-dceeac6ab1dc")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left bottom)
-		)
-	)
 	(gr_text "L+"
 		(at 116.2 94.86 -90)
 		(layer "F.SilkS")
@@ -1575,24 +1555,35 @@
 			)
 		)
 	)
-	(gr_text "R"
-		(at 135.6 104.8 -90)
+	(gr_text "TO IN1606"
+		(at 121.2 80 -90)
 		(layer "F.SilkS")
-		(uuid "2e5d0b50-27d4-48fa-8035-e2d30ecd37c7")
+		(uuid "b353c2a6-1981-4b57-b87a-8a621c232e24")
 		(effects
 			(font
-				(size 1.0 1.0)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
-	(gr_text "L"
-		(at 135.6 91.4 -90)
+	(gr_text "Rev ${REVISION}"
+		(at 125.5 84 -90)
 		(layer "F.SilkS")
-		(uuid "2325aef2-625e-47bd-9979-b1c178361e97")
+		(uuid "99be53c9-d947-40e3-a281-dbfbcffdcb49")
 		(effects
 			(font
-				(size 1.0 1.0)
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(gr_text "S-VIDEO ADAPTER"
+		(at 127.5 84 -90)
+		(layer "F.SilkS")
+		(uuid "0b05dae9-d963-426f-a95c-90f2e8b59fe1")
+		(effects
+			(font
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -1603,77 +1594,128 @@
 		(uuid "e6158bff-afc4-4949-a20e-2d2ecc91c810")
 		(effects
 			(font
-				(size 1.0 1.0)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
 	)
-	(gr_text "TO IN1606"
-		(at 121.2 80 -90)
+	(gr_text "L"
+		(at 135.6 91.4 -90)
 		(layer "F.SilkS")
-		(uuid "b353c2a6-1981-4b57-b87a-8a621c232e24")
-		(effects
-			(font
-				(size 1.0 1.0)
-				(thickness 0.15)
-			)
-		)
-	)
-	(gr_text "RLA-0002"
-		(at 127 86.36 -90)
-		(layer "F.SilkS")
-		(uuid "84bb9fc6-cf10-4f08-bc8f-1187911ed0cf")
+		(uuid "2325aef2-625e-47bd-9979-b1c178361e97")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
-			(justify left bottom)
 		)
 	)
-	(gr_text "Rev 2"
-		(at 127 96.52 -90)
+	(gr_text "R"
+		(at 135.6 104.8 -90)
 		(layer "F.SilkS")
-		(uuid "2af893a4-a398-40eb-981b-cd117ba01426")
+		(uuid "2e5d0b50-27d4-48fa-8035-e2d30ecd37c7")
 		(effects
 			(font
 				(size 1 1)
 				(thickness 0.15)
 			)
-			(justify left bottom)
+		)
+	)
+	(gr_text "Source: ${SOURCE_URL}"
+		(at 132 94.5 90)
+		(layer "B.SilkS")
+		(uuid "0762bae2-5b34-45a2-b3de-0fa91ff51164")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Licensed under CERN-OHL-S-2.0"
+		(at 129.8 94.5 90)
+		(layer "B.SilkS")
+		(uuid "1f1e2398-593b-43f8-9a33-79459adf9ed9")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Copyright Rick Altherr 2023-2026"
+		(at 127.6 94.5 90)
+		(layer "B.SilkS")
+		(uuid "208de532-f5be-41b5-a877-d76bc116e3b1")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+			(justify mirror)
+		)
+	)
+	(gr_text "Extron S-Video Adapter  Rev ${REVISION}"
+		(at 125.4 94.5 90)
+		(layer "B.SilkS")
+		(uuid "32cadedd-a96d-4d9c-87a7-192a956dfabe")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify mirror)
 		)
 	)
 	(segment
-		(start 132.77 105.36)
+		(start 113.4 104.1)
+		(end 134.03 104.1)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "/AUDIO_RIGHT")
+		(uuid "80fabb6d-bb07-4aa2-9d3d-7a76c33ee133")
+	)
+	(segment
+		(start 112.14 105.36)
+		(end 113.4 104.1)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "/AUDIO_RIGHT")
+		(uuid "9b06e212-524f-4c7e-897e-fe95ae4e09e4")
+	)
+	(segment
+		(start 134.03 104.1)
 		(end 137.07 101.06)
 		(width 0.25)
 		(layer "F.Cu")
 		(net "/AUDIO_RIGHT")
-		(uuid "1b653762-2afb-413a-92b4-1cf9a45f7835")
+		(uuid "f85cfa50-b132-4841-b87c-bc6a1cc9967e")
 	)
 	(segment
-		(start 112.14 105.36)
-		(end 132.77 105.36)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "/AUDIO_RIGHT")
-		(uuid "af96b233-4809-456a-b515-ec701f6135c1")
-	)
-	(segment
-		(start 112.14 94.86)
-		(end 129.27 94.86)
-		(width 0.25)
-		(layer "F.Cu")
-		(net "/AUDIO_LEFT")
-		(uuid "5a4624ee-267a-45fb-ae5e-c8f04fe631fc")
-	)
-	(segment
-		(start 129.27 94.86)
+		(start 130.53 93.6)
 		(end 137.07 87.06)
 		(width 0.25)
 		(layer "F.Cu")
 		(net "/AUDIO_LEFT")
-		(uuid "d064a502-706b-4885-97e0-81c080a9bdaf")
+		(uuid "3d168c3d-b051-4c44-ba62-6a104d0da442")
+	)
+	(segment
+		(start 112.14 94.86)
+		(end 113.4 93.6)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "/AUDIO_LEFT")
+		(uuid "9499aae9-8d7f-4eac-b747-e2abc057fff1")
+	)
+	(segment
+		(start 113.4 93.6)
+		(end 130.53 93.6)
+		(width 0.25)
+		(layer "F.Cu")
+		(net "/AUDIO_LEFT")
+		(uuid "a9921be4-72e6-4719-9730-4f4a2e4c252b")
 	)
 	(segment
 		(start 115.57 71.93)

@@ -475,5 +475,7 @@
       ""
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "SOURCE_URL": "github.com/mx-shift/extron-svideo-adapter"
+  }
 }
