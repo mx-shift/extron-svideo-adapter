@@ -598,7 +598,7 @@
 			(drill 0.89)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/LUMRA_RETURN")
+			(net "/LUMA_RETURN")
 			(pinfunction "Pin_1")
 			(pintype "passive")
 			(uuid "e168c602-d8f1-4fa2-9df1-f5e3c2072014")
@@ -1321,7 +1321,7 @@
 			(drill 1.1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "/LUMRA_RETURN")
+			(net "/LUMA_RETURN")
 			(pinfunction "Pin_7")
 			(pintype "passive")
 			(uuid "48b7d00c-dc6f-45de-838c-63950263eb78")
@@ -1551,7 +1551,7 @@
 		(end 132.08 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "33a4da6a-67d3-45de-be99-b8fff7c8ead6")
 	)
 	(segment
@@ -1559,7 +1559,7 @@
 		(end 131.18 72.432359)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "403d704d-c6ef-4e33-9425-fcf75f7758e2")
 	)
 	(segment
@@ -1567,7 +1567,7 @@
 		(end 131.18 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "4a14b4a0-6787-49e1-ba93-4bf63f8bf486")
 	)
 	(segment
@@ -1575,7 +1575,7 @@
 		(end 130.58 72.23)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "4deb07dd-321e-4f95-a4bb-7cc6d288880b")
 	)
 	(segment
@@ -1583,7 +1583,7 @@
 		(end 131.371137 71.547726)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "83f195d5-5608-4949-b12a-ce72441bde41")
 	)
 	(segment
@@ -1591,7 +1591,7 @@
 		(end 137.885 73.475)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "a3858cc9-8d85-4fa7-b1b8-a96cbb90b18f")
 	)
 	(segment
@@ -1599,7 +1599,7 @@
 		(end 133.381852 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "aba6b079-2f16-42fe-820d-116459f40db1")
 	)
 	(segment
@@ -1607,7 +1607,7 @@
 		(end 125.301277 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "af1fe922-b6a5-4a5d-b8e9-8880b325c386")
 	)
 	(segment
@@ -1615,7 +1615,7 @@
 		(end 115.57 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "b3190c3f-5d27-4600-b1d1-c9e02b69ee46")
 	)
 	(segment
@@ -1623,7 +1623,7 @@
 		(end 134.926852 73.475)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "e0297c7f-f36d-49e3-afc3-5e3e6b01d492")
 	)
 	(arc
@@ -1632,7 +1632,7 @@
 		(end 131.18 71.738863)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "07615a1a-f68d-42e3-b6cf-2c78a04c9e16")
 	)
 	(arc
@@ -1641,7 +1641,7 @@
 		(end 130.58 72.432359)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "29394d38-cbfe-41da-bda1-994a440888db")
 	)
 	(arc
@@ -1650,7 +1650,7 @@
 		(end 130.28 71.93)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "3b0e3cbc-6a81-4670-a831-c778c115828c")
 	)
 	(arc
@@ -1659,7 +1659,7 @@
 		(end 130.88 72.732359)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "62625abf-ce54-40ac-b6fb-4c480f9a5594")
 	)
 	(arc
@@ -1668,7 +1668,7 @@
 		(end 131.697726 71.547726)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "7f223dd8-e2f6-4055-b621-abb43979f745")
 	)
 	(arc
@@ -1677,7 +1677,7 @@
 		(end 131.888863 71.738863)
 		(width 0.25)
 		(layer "F.Cu")
-		(net "/LUMRA_RETURN")
+		(net "/LUMA_RETURN")
 		(uuid "af80ebbf-759a-49df-be2a-59dcbcffe4e7")
 	)
 	(segment

@@ -2007,7 +2007,7 @@
 		)
 		(uuid "57ae806b-2d19-464b-9a13-694860610b43")
 	)
-	(label "LUMRA_RETURN"
+	(label "LUMA_RETURN"
 		(at 58.42 57.15 0)
 		(effects
 			(font
@@ -2027,7 +2027,7 @@
 		)
 		(uuid "81687c98-d1c1-4aed-b9ce-59f77aebcac8")
 	)
-	(label "LUMRA_RETURN"
+	(label "LUMA_RETURN"
 		(at 118.11 41.91 180)
 		(effects
 			(font
