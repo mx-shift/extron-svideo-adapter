@@ -1,2 +1,16 @@
-rla-0002-backups
+# KiCad backups, autosaves, and lock files
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+*.lck
+~*.lck
+*.bak
+*-bak
+
+# KiCad caches and per-user local settings
 fp-info-cache
+*.kicad_prl
+
+# Fabrication output
+*-fab/
+gerbers/
