@@ -42,7 +42,7 @@ All other HD-15 pins are unconnected.
 
 ### Audio
 
-| Signal       | J4 (RCA) | J3 (terminal block) |
+| Signal       | J4 (RCA) | J3 (header)         |
 |--------------|:--------:|:-------------------:|
 | Left         | 4        | 1                   |
 | Right        | 2        | 4                   |
@@ -58,7 +58,9 @@ unbalanced input wiring.
 ## Revision history
 
 - **Rev 2:** Fixed the S-video jack (J2) footprint, whose signal pins were
-  mirrored left-to-right, and rerouted the video traces.
+  mirrored left-to-right, and rerouted the video traces. Also plated the RCA
+  mounting-tab slots, adjusted pad and drill sizes, added silkscreen labels,
+  and set design rules for OSH Park's 2-layer service.
 - **Rev 1:** Original fabricated board. J2's pinout is reversed; installing
   the jack on the bottom side of the board corrects it.
 
