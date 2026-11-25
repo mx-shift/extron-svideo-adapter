@@ -24,7 +24,7 @@ for S-video. It also breaks out stereo audio between RCA jacks and a 3.5 mm
 |-----|----------------------|----------------------------------------|
 | J1  | HD-15 to IN1606      | Amphenol L77HDE15SD1CH4F               |
 | J2  | S-video (Mini-DIN 4) | TE Connectivity 5749181-1              |
-| J3  | Audio terminal block | TE Connectivity 284512-5 (3.5 mm, 5-pos) |
+| J3  | Audio header         | TE Connectivity 284512-5 (3.5 mm, 5-pos) |
 | J4  | Audio RCA (L/R)      | CUI Devices RCJ-2123                   |
 
 ## Pinout
@@ -50,6 +50,11 @@ All other HD-15 pins are unconnected.
 | Audio ground | 1, 3     | 2, 3, 5             |
 
 Audio ground is kept separate from the video/chassis ground.
+
+J3 is a pluggable header. It mates with a TE 284506-5 (or compatible 3.5 mm
+5-position) screw-terminal plug, which you wire pin-for-pin to the IN1606's
+5-pole audio input plug (L+, L−, ⏚, R+, R−). This matches Extron's
+unbalanced input wiring.
 
 ## Repository layout
 

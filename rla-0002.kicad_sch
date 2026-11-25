@@ -2402,7 +2402,7 @@
 				(justify left)
 			)
 		)
-		(property "Manufcaturer Part Number" "284512-5"
+		(property "Manufacturer Part Number" "284512-5"
 			(at 48.26 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
