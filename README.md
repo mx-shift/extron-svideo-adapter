@@ -59,10 +59,10 @@ All other HD-15 pins are unconnected.
 
 Audio ground is kept separate from the video/chassis ground.
 
-J3 is a pluggable header. It mates with a
-[TE 284506-5](https://www.te.com/en/product-284506-5.html) (or compatible
-3.5 mm 5-position) screw-terminal plug, which you wire pin-for-pin to the
-IN1606's 5-pole audio input plug (L+, L−, ⏚, R+, R−). This matches Extron's
+J3 is a pluggable header with the same 3.5 mm 5-position format as the
+IN1606's audio inputs. Make the audio cable with a
+[TE 284506-5](https://www.te.com/en/product-284506-5.html) screw-terminal plug
+at each end, wired pin-for-pin (L+, L−, ⏚, R+, R−). This matches Extron's
 unbalanced input wiring.
 
 ## Revision history
@@ -83,6 +83,15 @@ the Excellon drill file. Upload the zip to [OSH Park](https://oshpark.com/).
 The board is designed to OSH Park's 2-layer rules. Use the zip rather than the
 `.kicad_pcb` file: the design is in KiCad 10 format, and OSH Park processes
 uploaded board files with an older KiCad.
+
+The release's `-bom.csv` lists the parts that solder to the board and imports
+into DigiKey's BOM Manager. You'll also need:
+
+- 2 × [TE Connectivity 284506-5](https://www.te.com/en/product-284506-5.html)
+  3.5 mm 5-position screw-terminal plugs for the audio cable: one mates with
+  J3 and the other with the IN1606's audio input. You can use the IN1606's own
+  captive-screw plug for its end instead.
+- 1 × male-to-male HD-15 (VGA) cable to connect J1 to the IN1606
 
 ## Case
 
