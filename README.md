@@ -15,7 +15,6 @@ for S-video. It also breaks out stereo audio between RCA jacks and a 3.5 mm
 
 - 2-layer, 1.6 mm FR-4, 43.18 × 63.5 mm
 - All through-hole parts; no active components
-- Luma and chroma traces are length-tuned between J2 and J1
 - Designed in KiCad 10
 
 ## Connectors
@@ -55,6 +54,13 @@ J3 is a pluggable header. It mates with a TE 284506-5 (or compatible 3.5 mm
 5-position) screw-terminal plug, which you wire pin-for-pin to the IN1606's
 5-pole audio input plug (L+, L−, ⏚, R+, R−). This matches Extron's
 unbalanced input wiring.
+
+## Revision history
+
+- **Rev 2:** Fixed the S-video jack (J2) footprint, whose signal pins were
+  mirrored left-to-right, and rerouted the video traces.
+- **Rev 1:** Original fabricated board. J2's pinout is reversed; installing
+  the jack on the bottom side of the board corrects it.
 
 ## Repository layout
 
