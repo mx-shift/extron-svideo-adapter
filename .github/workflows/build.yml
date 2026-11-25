@@ -1,6 +1,7 @@
-# Checks the design (ERC/DRC) and builds the schematic PDF and an
-# OSH Park-ready Gerber/drill package. Outputs are uploaded as a workflow
-# artifact; pushing a v* tag also publishes them as a GitHub release.
+# Checks the design (ERC/DRC) and builds the schematic PDF, an OSH
+# Park-ready Gerber/drill package, and the case STLs. Outputs are uploaded as
+# workflow artifacts; pushing a v* tag also publishes them as a GitHub
+# release.
 name: Build
 
 on:
@@ -34,9 +35,27 @@ jobs:
           path: output/
           if-no-files-found: error
 
+  case:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install OpenSCAD
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends openscad
+
+      - name: Check case and export STLs
+        run: scripts/build-case.sh
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: case
+          path: output-case/
+          if-no-files-found: error
+
   release:
     if: github.ref_type == 'tag'
-    needs: build
+    needs: [build, case]
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -46,12 +65,17 @@ jobs:
           name: outputs
           path: output
 
+      - uses: actions/download-artifact@v4
+        with:
+          name: case
+          path: output
+
       - name: Publish release
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          assets=(output/*-oshpark.zip output/*-schematic.pdf)
+          assets=(output/*-oshpark.zip output/*-schematic.pdf output/*-case-*.stl)
           if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
             gh release upload "$GITHUB_REF_NAME" "${assets[@]}" --clobber
           else

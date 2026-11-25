@@ -84,18 +84,57 @@ The board is designed to OSH Park's 2-layer rules. Use the zip rather than the
 `.kicad_pcb` file: the design is in KiCad 10 format, and OSH Park processes
 uploaded board files with an older KiCad.
 
+## Case
+
+![Case, exploded](docs/case.png)
+
+`case/case.scad` is a two-part, 3D-printable case. The bottom shell holds the
+board on ledges along its two connector-free edges, and walls inside the top
+shell clamp the same strips from above. The top shell's side walls have
+openings for the connectors. Ears on the bottom shell let you screw the case
+to a surface. Assembled, it measures 47.8 × 84.1 × 31.1 mm (104 mm long
+including the ears).
+
+STLs for both shells are attached to each
+[release](https://github.com/mx-shift/extron-svideo-adapter/releases/latest)
+and to every Actions run (the `case` artifact), already oriented for printing.
+
+Hardware:
+
+- 4 × M3 × 25 socket head cap screws
+- 4 × M3 heat-set inserts for 4.0 mm holes, at least 5 mm long (set
+  `insert_d` to about 2.6 to self-tap the screws instead)
+- 4 × #8 or M4 screws to mount the case (4.5 mm holes)
+
+Printing: PLA or PETG, 0.2 mm layers, no supports. Print the bottom shell
+floor-down and the top shell roof-down, as exported.
+
+Assembly: install the inserts in the bottom shell, drop the board in, lower
+the top shell over the connectors, and fit the screws.
+
+The connector openings are sized from the manufacturers' drawings. The
+`check` part in `case.scad` verifies that the case doesn't intersect the board
+or the connector bodies. Mating plugs with oversized bodies or overmolds may
+stop against the walls before fully seating: the S-video opening is
+14.9 × 13.4 mm, the RCA slots are 11 mm wide, and the audio plug opening is
+21.7 × 14 mm. The audio plug opening was not checked against the mating
+plug's drawing. Adjust the parameters at the top of `case.scad` if needed.
+
 ## Building
 
 `scripts/build.sh` runs ERC and DRC, then writes the schematic PDF and the
 OSH Park package to `output/`. GitHub Actions runs it in the `kicad/kicad`
 container on every push and pull request; pushing a `v*` tag also publishes a
-release with the zip and schematic PDF. To run it locally:
+release with the zip, schematic PDF, and case STLs. To run it locally:
 
 ```sh
 scripts/build.sh
 # or, with the KiCad Flatpak:
 KICAD_CLI="flatpak run --command=kicad-cli org.kicad.KiCad" scripts/build.sh
 ```
+
+`scripts/build-case.sh` runs the case collision check and exports the STLs to
+`output-case/`. It needs OpenSCAD.
 
 The source location printed on the board and in the title blocks is the
 `SOURCE_URL` project text variable (Schematic/Board Setup → Text Variables).
@@ -105,8 +144,9 @@ The source location printed on the board and in the title blocks is the
 - `extron-svideo-adapter.kicad_pro`, `.kicad_sch`, `.kicad_pcb`: KiCad project
 - `extron-svideo-adapter.pretty/`: custom footprints for the connectors above.
   The project library table (`fp-lib-table`) loads them automatically.
-- `scripts/build.sh`, `.github/workflows/build.yml`: design checks and
-  fabrication outputs
+- `case/case.scad`: 3D-printable case (OpenSCAD)
+- `scripts/build.sh`, `scripts/build-case.sh`, `.github/workflows/build.yml`:
+  design checks, fabrication outputs, and case STLs
 
 ## License
 
