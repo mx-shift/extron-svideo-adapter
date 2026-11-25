@@ -74,11 +74,39 @@ unbalanced input wiring.
 - **Rev 1:** Original fabricated board. J2's pinout is reversed; installing
   the jack on the bottom side of the board corrects it.
 
+## Ordering boards
+
+Download `extron-svideo-adapter-<version>-oshpark.zip` from the
+[latest release](https://github.com/mx-shift/extron-svideo-adapter/releases/latest)
+(or the `outputs` artifact of any Actions run). It contains the Gerbers and
+the Excellon drill file. Upload the zip to [OSH Park](https://oshpark.com/).
+The board is designed to OSH Park's 2-layer rules. Use the zip rather than the
+`.kicad_pcb` file: the design is in KiCad 10 format, and OSH Park processes
+uploaded board files with an older KiCad.
+
+## Building
+
+`scripts/build.sh` runs ERC and DRC, then writes the schematic PDF and the
+OSH Park package to `output/`. GitHub Actions runs it in the `kicad/kicad`
+container on every push and pull request; pushing a `v*` tag also publishes a
+release with the zip and schematic PDF. To run it locally:
+
+```sh
+scripts/build.sh
+# or, with the KiCad Flatpak:
+KICAD_CLI="flatpak run --command=kicad-cli org.kicad.KiCad" scripts/build.sh
+```
+
+The source location printed on the board and in the title blocks is the
+`SOURCE_URL` project text variable (Schematic/Board Setup → Text Variables).
+
 ## Repository layout
 
 - `extron-svideo-adapter.kicad_pro`, `.kicad_sch`, `.kicad_pcb`: KiCad project
 - `extron-svideo-adapter.pretty/`: custom footprints for the connectors above.
   The project library table (`fp-lib-table`) loads them automatically.
+- `scripts/build.sh`, `.github/workflows/build.yml`: design checks and
+  fabrication outputs
 
 ## License
 
